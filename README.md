@@ -1,4 +1,4 @@
-# uni-app-project
+# demo
 
 ## Project setup
 ```

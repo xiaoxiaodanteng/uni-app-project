@@ -1,16 +1,67 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/schedule/schedule",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "日程"
+			}
+		},
+		{
+			"path": "pages/work/work",
+			"style": {
+				"navigationBarTitleText": "工作"
+			}
+		},
+		
+		{
+			"path": "pages/communication/communication",
+			"style": {
+				"navigationBarTitleText": "通信"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
-	],
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6"
+	},
+	"tabBar": {
+		"color": "#aeaeae",
+		"selectedColor": "#2f62a2",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/work/work",
+				"iconPath": "static/work.png",
+				"selectedIconPath": "static/workHL.png",
+				"text": "工作"
+			},
+			{
+				"pagePath": "pages/schedule/schedule",
+				"iconPath": "static/images/schedule.png",
+				"selectedIconPath": "static/images/scheduleHL.png",
+				"text": "日程"
+			}, {
+				"pagePath": "pages/communication/communication",
+				"iconPath": "static/images/communication.png",
+				"selectedIconPath": "static/images/communicationHL.png",
+				"text": "通信"
+			}, {
+				"pagePath": "pages/user/user",
+				"iconPath": "static/images/user.png",
+				"selectedIconPath": "static/images/userHL.png",
+				"text": "我的"
+			}
+		]
 	}
 }
