@@ -42,8 +42,8 @@
 		"backgroundColor": "#F8F8F8",
 		"list": [{
 				"pagePath": "pages/work/work",
-				"iconPath": "static/work.png",
-				"selectedIconPath": "static/workHL.png",
+				"iconPath": "static/images/work.png",
+				"selectedIconPath": "static/images/workHL.png",
 				"text": "工作"
 			},
 			{

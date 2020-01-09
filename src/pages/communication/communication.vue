@@ -2,11 +2,8 @@
 	<view>
 		
 		<!-- tabs -->
-		<view>
-			<tui-tabs
-				:tabs="tabs"
-				bg-color="#ffffff"
-			></tui-tabs>
+		<view class="tui-mtop">
+			<tui-tabs :tabs="tabs" :currentTab="currentTab>2?0:currentTab" @change="change" itemWidth="33.3333%"></tui-tabs>
 		</view>
 	</view>
 </template>
@@ -34,7 +31,9 @@
 			}
 		},
 		methods: {
-			
+			change(e) {
+				this.currentTab = e.index
+			},
 		}
 	}
 </script>
